@@ -58,12 +58,13 @@ public class TwoFragment extends BaseFragment {
             public void handleMessage(Message msg) {
                 super.handleMessage(msg);
                 etText.setText("我是2请求回来的数据");
-                etText.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.rotateanim));
+                etText.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.translateanim));
             }
         }.sendEmptyMessageDelayed(0, 200);
     }
 
     @Override
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         Log.i("xlc", "第2个fragment onCreateView");
         return super.onCreateView(inflater, container, savedInstanceState);

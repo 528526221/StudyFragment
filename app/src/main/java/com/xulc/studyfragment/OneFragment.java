@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 /**
+ * fragment碎片化开发时，为了返回栈的上一层时不要重新加载数据，因此不需要懒加载形式的fragment
  * Created by xuliangchun on 2017/2/14.
  */
 public class OneFragment extends BaseFragment {
@@ -63,15 +64,5 @@ public class OneFragment extends BaseFragment {
         }.sendEmptyMessageDelayed(0, 200);
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        Log.i("xlc","第1个fragment onCreateView");
-        return super.onCreateView(inflater, container, savedInstanceState);
-    }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        Log.i("xlc", "第1个fragment onDestroyView");
-    }
 }
