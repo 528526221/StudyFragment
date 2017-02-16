@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- 左进左出 -->
+    <style name="window_anim_left">
+        <item name="android:windowEnterAnimation">@anim/trans_right_in</item>
+        <item name="android:windowExitAnimation">@anim/trans_left_out</item>
+    </style>
+</resources>
