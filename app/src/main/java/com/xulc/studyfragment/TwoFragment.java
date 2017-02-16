@@ -64,7 +64,6 @@ public class TwoFragment extends BaseFragment {
     }
 
     @Override
-
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         Log.i("xlc", "第2个fragment onCreateView");
         return super.onCreateView(inflater, container, savedInstanceState);
